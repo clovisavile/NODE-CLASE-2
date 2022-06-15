@@ -33,8 +33,8 @@ router.post('/', async (req, res, next) => {
   var info = await transport.sendMail(obj);
 
   res.render('contacto', {
-    isContacto: true
-    message: 'Mensaje enviado correctamente'
+    isContacto: true,
+    message: 'Mensaje enviado correctamente',
   }); 
 });
 
